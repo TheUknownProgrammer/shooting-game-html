@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="resources/target.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="TheUnknownProgrammer">
+    <title>Shooting Game.</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts/custom-library.js"></script>
+    <script src="scripts/player.js" defer></script>
+    <script src="scripts/enemies.js" defer></script>
+    <script src="scripts/game.js" defer></script>
+</head>
+<body>
+
+    <div id="game_container">
+        <div id="menu_screen">
+            <h1>first person shooting game - Pure: HTML,CSS,Javascript.</h1>
+            <button onclick="startGame()" title="start game.">Play</button>
+            <a href="credits.html"><button title="view credits.">credits</button></a>
+        </div>
+
+        <div id="shooting_game">
+            <div id="enemies-container"></div>
+    
+            <div id="player">
+                <div id="stats">
+                    <h2 class="title_stats">stats</h2>
+                    <div id="health">health: <span id="health-points">100</span>/<span id="max-health-points">100</span></div>
+                    <div id="score">score: <span id="score-points">0</span>/<span id="score-to-next-level">10</span></div>
+                    <div id="level">level: <span id="current-level">1</span>/100</div>
+                    <div id="ammo">ammo: <span id="current-ammo">30</span>/<span id="max-ammo">30</span></div>
+                </div>
+                <div id="weapon"></div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

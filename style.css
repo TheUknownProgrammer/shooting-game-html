@@ -1,0 +1,116 @@
+*,html,body {
+    user-select: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /*background-color: lightblue;*/
+}
+h1 {
+    text-transform: capitalize;
+    text-decoration: underline;
+    background-color: purple;
+    color: white;
+    padding: 10px;
+}
+#shooting_game {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    cursor: url(resources/target.png) 27.5 27.5, auto;
+    z-index: -1;
+}
+a {
+    text-decoration: none;
+}
+#menu_screen button {
+    cursor: pointer;
+    display: block;
+    border: 1px solid white;
+    background-color: black;
+    padding: 10px;
+    transition: 0.2s;
+    color: white;
+    text-transform: capitalize;
+    text-shadow: -2px -1px 6px white;
+    margin: 10px;
+}
+#menu_screen button:hover { /* add hover sound for the buttons. */
+    padding: 15px;
+    background-color: gray;
+}
+#weapon {
+    background-image: url(resources/sniper.png);
+    background-position: center;
+    background-size: cover;
+    pointer-events: none;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+}
+#stats {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, green, darkgreen, green);
+    color: white;
+    padding: 10px;
+    text-transform: capitalize;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+.title_stats {
+    text-decoration: underline;
+    text-align: center;
+    text-transform: uppercase;
+}
+.bar {
+    width: 0%;
+    height: 20px;
+    background-color: red;
+}
+.bullet {
+    background-color: black;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    z-index: -1;
+    box-shadow: 0px 0px 17px 5px dimgray; /* darkgray */
+    border: 0.5px solid white;
+}
+.attack_red {
+    animation: background-change;
+    animation-duration: 0.4s;
+    /* animation-duration: 2s; */
+}
+@keyframes background-change {
+    from /* refer to (0%) */ {background-color: red;}
+    to /* refer to (100%) */ {background-color: rgb(145, 0, 0);}
+}
+#enemy {
+    border-radius: 10px;
+    user-select: none;
+    box-shadow: 0px 0px 20px 15px black inset;
+}
+#menu_screen {
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("resources/brick\ wall\ black.png");
+}
+.boss_level {
+    background-image: url("resources/bossfight_background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

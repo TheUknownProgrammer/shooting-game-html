@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="TheUnknownProgrammer">
+    <title>Credits</title>
+    <link rel="icon" href="resources/target.png">
+    <style>
+        body {
+            color: white;
+            -webkit-text-stroke: 0.25px black;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        table tr>* {
+            padding: 10px;
+        }
+
+        table {
+            background-color: gray;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .back_btn {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: 0.2s;
+            border: 1px solid black;
+            background-color: black;
+            padding: 10px;
+            display: block;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        .back_btn:hover {
+            background-color: lightcyan;
+            color: rgb(50, 50, 255);
+        }
+
+        .content {
+            width: fit-content;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    </style>
+    <script src="scripts/custom-library.js"></script>
+    <!-- import randomColorBackground from "scripts/custom-library.js"; -->
+</head>
+
+<body onload="randomColorBackground(document.body)">
+
+    <div class="content">
+        <h1>Credits:</h1>
+
+        <table>
+            <tr>
+                <th>code</th>
+                <th>sound effects</th>
+                <th>sprites</th>
+            </tr>
+            <tr>
+                <td>by The Unknown Programmer.</td>
+                <td>sources from the internet.</td>
+                <td>sources from the internet.</td>
+            </tr>
+        </table>
+
+        <a href="index.html" title="Go Back To Game.">
+            <button class="back_btn">go back</button>
+        </a>
+    </div>
+
+
+</body>
+
+</html>
