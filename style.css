@@ -88,7 +88,6 @@ a {
 .attack_red {
     animation: background-change;
     animation-duration: 0.4s;
-    /* animation-duration: 2s; */
 }
 @keyframes background-change {
     from {background-color: red;}
